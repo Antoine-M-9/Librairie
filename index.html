@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bibliothèque</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="imgM"></div>
+            <h1>Ma Bibliothèque</h1>
+        </div>
+    </header>
+    <form class='form'>
+        <h3>Livre, BD, Manga</h3>
+        <input name='type' type="text">
+        <h3>Titre</h3>
+        <input name='titre' type="text">
+        <h3>Auteur</h3>
+        <input name='auteur' type="text">
+        <h3>Tome</h3>
+        <input name='tome' type="number">
+        <button class="button" type='submit'>Enregistrer</button>
+    </form>
+
+    <ul class="ul"></ul>
+
+    <form class='ulEdit'>
+        <li class='item'>
+            <span class="sEdit">Type: </b></span> <br>
+            <input type="text" name="editType">
+            <span class="sEdit">Titre: </b></span> <br>
+            <input type="text" name="editTitre"> 
+            <span class="sEdit">Auteur: </b></span> <br>
+            <input type="text" name="editAuteur">
+            <span class="sEdit">Tome: </b></span>
+            <input type="number" name="editTome">
+            <button type="submit" class="button bEdit">Enregistrer</button>
+        </li>
+    </form>
+
+    <script src='script.js'></script>
+</body>
+</html>
