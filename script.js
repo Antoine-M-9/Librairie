@@ -98,7 +98,6 @@ function modify(e) {
     bibli[key].edit = !bibli[key].edit;
     if (bibli[key].edit) {
         editForm.style.display = 'flex';
-        inputEdit[0].setAttribute('value', bibli.type)
         b.style.filter = 'blur(5px)';
         c.style.filter = 'blur(5px)';
         d.style.filter = 'blur(5px)';
@@ -109,6 +108,7 @@ function modify(e) {
                 auteur: inputEdit[2].value,
                 tome: inputEdit[3].value
             }
+            saveObj();
         } 
     } else {
         editForm.style.display = 'none';
