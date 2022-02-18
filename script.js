@@ -73,12 +73,9 @@ function createHTML(object, key) {
         li.children.t.children.modif.onclick = modify;
     }
 
-async function toBin(){
-    const a = document.querySelector('.item');
-    const key = this.parentNode.parentNode.getAttribute('data-key');    
-    a.style.backgroundColor = 'blue';
-    a.style.transitionProperty = '.1s';
+function toBin(){
     this.parentNode.parentNode.remove();
+    const key = this.parentNode.parentNode.getAttribute('data-key');    
     delete bibli[key];
     saveObj();
 }
